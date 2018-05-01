@@ -6,9 +6,9 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'ping') {
-    msg.reply('Pong!');
+client.on('message', message => {
+  if (message.content.toLowerCase() === '-new') {
+    message.reply('This feature is a work-in-progress!');
   }
 });
 
@@ -20,4 +20,4 @@ fs.readFile('secret.txt', 'utf8', function(err, data) {
   let secret = data.split('\n')[0];
 
   client.login(secret);
-})
+});

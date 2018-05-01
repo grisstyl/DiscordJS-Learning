@@ -8,5 +8,8 @@
   },
   "repository": "git@github.com:grisstyl/DiscordJS-Learning.git",
   "author": "Tyler Grissom",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
 }
