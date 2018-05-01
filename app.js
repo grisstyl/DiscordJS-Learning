@@ -14,7 +14,7 @@ client.on('message', msg => {
 
 fs.readFile('secret.txt', 'utf8', function(err, data) {
   if (err) {
-    throw err;
+    return console.log('You must provide a secret.txt');
   }
 
   let secret = data.split('\n')[0];
